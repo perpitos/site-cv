@@ -1,0 +1,86 @@
+body{
+	height: 200vh;
+}
+
+.element{
+	display: flex;
+	margin-top: 10vh;
+	width: 100%;
+	justify-content: center;
+}
+
+.formulaire{
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 50% 50%;
+	padding: 40px;
+	grid-gap: 10px;
+}
+
+label{
+	color: ghostwhite;
+}
+
+.mail{
+	margin-top: 20px;
+	grid-column: 1 / span 2;
+}
+
+#mail{
+	grid-column: 1 / span 2;
+	width: 34vh;
+}
+
+.border_red{
+ 	border-color: rgb(204, 10, 10);
+ 	border-radius: 1px;
+ }
+
+.border_green{
+ 	border-color: rgb(12, 102, 30);
+ 	border-radius: 2px;
+ }
+
+.message{
+ 	grid-column: 1 / span 2;
+ 	margin-top: 10px;
+}
+
+#message{
+ 	grid-column: 1 / span 2;
+ 	width: 34vh;
+ 	height: 10vh;
+}
+
+.button{
+
+}
+
+input{
+ 	background-color: rgba(0, 0, 0, 0);
+ 	color: ghostwhite;
+ 	border: solid;
+ 	border-color: rgba(255, 255, 255, 0.8);
+}
+
+textarea{
+ 	background-color: rgba(0, 0, 0, 0);
+ 	color: ghostwhite;
+ 	border: solid;
+ 	border-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.contact_me{
+	margin-top: 20px;
+	color: ghostwhite;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 100%;
+	grid-gap: 10px;
+}
+
+u{
+	color: lightblue;
+}

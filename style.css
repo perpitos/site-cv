@@ -1,0 +1,120 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-size: cover;
+	background-position: center;
+	background-image: url(images/background.jpg);
+}
+
+.header{
+	width: 100%;
+	/*background-size: cover;
+	background-position: center;
+	background-image: url(images/background.jpg);*/
+}
+
+.navbar{
+	background-color: black;
+	padding: 16px;
+	display: grid;
+	font-size: 24px;
+	grid-template-columns: 84% 5% 5% 5%;
+	grid-gap: 5px;
+}
+
+#MainTitle{
+	color: ghostwhite;
+}
+
+.link{
+	color: ghostwhite;
+	text-decoration: none;
+}
+
+.link:hover{
+	text-decoration: underline;
+	color: grey;
+}
+
+.text{
+	height: 80vh;
+	width: 100%;
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 55% 45%;
+}
+
+.titre{
+	display: grid;
+	height: 80vh;
+	align-content: center;
+	justify-items: center;
+	grid-template-rows: 8% 8% 8%;
+	grid-gap: 30px;
+	/*border: solid;
+	border-color: white;
+	border-radius: 10px;*/
+}
+
+
+
+.subTitle{
+	color: ghostwhite;
+	font-size: 30px;
+	font-family: Roboto, sans-serif;
+}
+
+.title{
+	color: ghostwhite;
+	font-size: 40px;
+	font-family: Roboto, sans-serif;
+}
+
+.photo{
+	height: 80vh;
+	width: 80vh;
+	/*border: solid;
+	border-radius: 5px;
+	border-color: white;*/
+}
+
+.temp{
+	font-size: 40px;
+	color: white;
+}
+
+.image{
+	height: 80vh;
+	width: 80vh;
+}
+
+.part{
+	width: 50%;
+	height: auto;
+}
+
+.part_name{
+	color: ghostwhite;
+	font-size: 30px;
+	text-decoration: underline dotted blueviolet;
+	margin: 0px 0px 16px 40px;
+}
+
+.description{
+	color: white;
+	margin: 0px 0px 40px 30px;
+	border: dashed blueviolet;
+	border-radius: 20px;
+	padding: 10px;
+	list-style-type: none;
+}
+
+footer{
+	display: grid;
+	background-color: black;
+	font-size: 24px;
+	color: ghostwhite;
+}
