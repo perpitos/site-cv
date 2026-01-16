@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<!--Initialising new font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<title>Contact</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<p id="MainTitle">Ottinger Robin</p>
+			<a class="link" href="home.html">accueil</a>
+			<a class="link" href="contact.html">contact</a>
+			<a class="link" href="portfolio.html">portfolio</a>
+		</nav>
+	</header>
+
+	<section class="element">
+		<form class=formulaire>
+			<label class="name">Nom</label>
+			<label class="name">Prénom</label>
+			<input id="name" class="none" type="text" name="name" placeholder="Albert" autofocus>
+			<input id="secondName" class="none" type="text" name="secondName" placeholder="Durand">
+			<label class="mail">Email</label>
+			<input id="mail" class="none" type="email" placeholder="AlbertDurand@gmail.com" >
+			<label class="message">Message</label>
+			<textarea id="message" class="none" placeholder="Veuillez saisir 10 caractères minimum" minlength="10"></textarea>
+			<input class="button" type="submit" name="envoyer">
+			<input class="button" type="reset" name="effacer">
+		</form>
+	</section>
+
+	<section class="contact_me">
+		<h3>Mes coordonnées</h3><br>
+		<h4>Email : <u>robinottinger07@gmail.com</u></h4>
+		<h4>Tél : <u>+33 6-26-64-38-37</u></h4>
+	</section>
+
+	<script src="main.js"></script>
+</body>
