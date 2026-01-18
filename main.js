@@ -1,49 +1,19 @@
-// const nameInput = [document.querySelector("#name")]
+const toggle = document.getElementById("theme-toggle");
+const body = document.body;
 
+toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
 
-
-// const form = document.querySelector("form")
-// const nameInput = document.querySelector("#name")
-
-// form.addEventListener("submit", function(event){
-// 	event.preventDefault()
-// 	if (nameInput.value === ""){
-// 		nameInput.classList.add("border")
-// 		// nameInput.classList.add("double")
-// 	}
-// 	else{
-// 		nameInput.classList.remove("border")
-// 	}
-// })
-
-const parent = document.querySelector("form")
-const idsArray = [...parent.children].filter(el=>el.id).map(el => el.id)
-console.log(idsArray)
-const form = document.querySelector("form")
-
-
-form.addEventListener("submit", function(event){
-	event.preventDefault()
-	idsArray.forEach((element) => {
-		let test = document.getElementById(element)
-		// check if the value is empty
-		if (test.value === ""){
-			// add a red border to all empty input needeed
-			test.classList.remove("border_green")
-			test.classList.add("border_red")
-
-		}
-		else{
-			// add a green border to all input completed
-			test.classList.remove("border_red")
-			test.classList.add("border_green")
-		}
-	})
+    toggle.textContent = body.classList.contains("dark")
+        ? "Light mode"
+        : "Dark mode";
 })
 
-form.addEventListener("reset", function(event){
-	idsArray.forEach((element) => {
-		element = document.getElementById(element)
-		element.classList.remove("border_red", "border_green")
-	})
-})
+function navigate(){
+    const select = document.getElementById("projectSelector");
+    const selectedValue = select.value;
+
+    if(selectedValue){
+        window.location.href = "portfolio.html#" + selectedValue;
+    }
+}
