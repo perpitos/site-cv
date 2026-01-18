@@ -1,4 +1,4 @@
-If you want the site to work properly you need to download images from the branch images
-Put this directory in the site directory and rename it "images".
+If you want to see this website without downloading it use this link :
+https://perpitos.github.io/site-cv/home.html
 
-Made by Perpi
+Web site made by perpi.
