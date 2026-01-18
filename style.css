@@ -8,14 +8,14 @@
 
 /*for the dark/light mode switch*/
 :root {
-    --bg: url(images/background_upscaled.jpg);
+    --bg: url(background_upscaled.jpg);
     --text: #f8f8ff;
     --navbar: #010101;
     --accent: #808080;
 }
 
 body.dark {
-    --bg: url(images/background_2.png);
+    --bg: url(background_2.png);
     --text: #020200;
     --card: #1f1f1f;
     --navbar: #f9f9f9;
