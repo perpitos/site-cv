@@ -1,7 +1,27 @@
-body{
-	height: 200vh;
+/*for dark/light mode*/
+:root {
+    --bg: url(images/background_upscaled.jpg);
+    --text: #f8f8ff;
+    --navbar: #010101;
+    --accent: #808080;
+    --borderRed: #cc0a0a; 
+    --borderGreen: #0c661e;
+    --contact: #add8e6;
 }
 
+body.dark {
+    --bg: url(images/background_2.png);
+    --text: #020200;
+    --card: #1f1f1f;
+    --navbar: #f9f9f9;
+    --accent: #677a99;
+    --borderRed: #fa3939; 
+    --borderGreen: #04de30;
+    --contact: #025e7d;
+}
+
+
+/*form section*/
 .element{
 	display: flex;
 	margin-top: 10vh;
@@ -18,8 +38,25 @@ body{
 }
 
 label{
-	color: ghostwhite;
+	color: var(--text);
 }
+
+.input{
+	border-color: var(--text);
+}
+
+/*creating border to display for input to tell the user if it's good or not*/
+.border_red{
+ 	border-color: var(--borderRed);
+ 	border-radius: 1px;
+}
+
+.border_green{
+ 	border-color: var(--borderGreen);
+ 	border-radius: 2px;
+}
+
+/*----------------------------*/
 
 .mail{
 	margin-top: 20px;
@@ -30,16 +67,6 @@ label{
 	grid-column: 1 / span 2;
 	width: 34vh;
 }
-
-.border_red{
- 	border-color: rgb(204, 10, 10);
- 	border-radius: 1px;
- }
-
-.border_green{
- 	border-color: rgb(12, 102, 30);
- 	border-radius: 2px;
- }
 
 .message{
  	grid-column: 1 / span 2;
@@ -53,27 +80,39 @@ label{
 }
 
 .button{
-
+	border-color: var(--text);
 }
 
 input{
  	background-color: rgba(0, 0, 0, 0);
- 	color: ghostwhite;
+ 	color: var(--text);
  	border: solid;
- 	border-color: rgba(255, 255, 255, 0.8);
 }
 
 textarea{
  	background-color: rgba(0, 0, 0, 0);
- 	color: ghostwhite;
+ 	color: var(--text);
  	border: solid;
  	border-color: rgba(255, 255, 255, 0.8);
 
 }
 
+#confirm{
+	color: var(--borderGreen);
+	grid-column: 1 / span 2;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+/*----------------------------*/
+
+/*contact me section*/
+
 .contact_me{
 	margin-top: 20px;
-	color: ghostwhite;
+	color: var(--text);
 	display: grid;
 	align-items: center;
 	justify-items: center;
@@ -82,5 +121,9 @@ textarea{
 }
 
 u{
-	color: lightblue;
+	color: var(--contact);
+}
+
+.bottom{
+	margin-top: 24vh;
 }
