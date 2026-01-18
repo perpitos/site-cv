@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- core style sheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!--Initialising new font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 	<title>Home</title>
+
 </head>
+
 <body>
-	<header class="header">
+	<!-- navigation bar -->
+	<header>
 		<nav class="navbar">
-			<p id="MainTitle">Ottinger Robin</p>
+			<p id="theme-toggle">Dark theme</p>
+			<!-- empty div to correctly place elements in the grid -->
+			<div></div> 
 			<a class="link" href="home.html">accueil</a>
 			<a class="link" href="contact.html">contact</a>
-			<a class="link" href="portfolio.html">portfolio</a>
+			<select id="projectSelector" onchange="navigate()">
+				<option value="#">portfolio</option>
+				<option value="project1">projet 1</option>
+				<option value="project2">projet 2</option>
+				<option value="project3">projet 3</option>
+			</select>
 		</nav>
 	</header>
 
+	<!-- Main title and my head -->
 	<section class="text">
 		<div class="titre">
 			<p id="start" class="subTitle">Coding lover</p>
-			<h1 class="title">Ottinger Robin</h1>
+			<h1 class="title">Robin Ottinger</h1>
 			<p class="subTitle">Etudiant en 1ère année à L'IIM</p>
 		</div>
 		<div class="photo">
-			<img class="image" src="images/logo.jpg">
+			<img class="image" src="images/photo.png">
 		</div>
 	</section>
+
+	<!-- About me part -->
 	<section class="part">
 		<h2 class="part_name">About me</h2>
-		<p class="description">Bonjour pour le moment je sais pas quoi écrire mais asshoul</p>
+		<p class="description">Je suis étudiant à l'IIM digital school Nantes en 1ère année de bachelor.
+			<br>Je suis passionné par l'informatique et notamment par la programmation.
+			<br>J'aime programmer des jeux sur mon temps libre afin d'attendre de nouvelles techniques ou de nouveaux languages.
+			<br>Je suis investi en cour comme dans mon travail personnel, je ne me repose pas sur mes aquis et cherchent constamment à m'améliorer.
+		</p>
 	</section>
+
+	<!-- my skills -->
 	<section class="part">
 		<h2 class="part_name">Skills</h2>
 		<ul class="description">
-			<li>skill 1</li>
-			<li>skill 2</li>
-			<li>skill 3</li>
+			<li>Anglais niveau B2+</li>
+			<li>Programmation en python/HTML/CSS/SQL</li>
+			<li>Débutant en 3D</li>
 		</ul>
 	</section>
 
+	<!-- the page foot -->
 	<footer>
-		<p>github</p>
-		<p>linkedin</p>
+		<p id="MainTitle">Robin Ottinger</p>
+		<a href="#" class="top_link">/\</a>
+		<a class="foot" href="https://github.com/perpitos">github</a>
+		<a class="foot" href="www.linkedin.com/in/robin-masson-ottinger-7900b33a1">linkedIn</a>
 	</footer>
 
+	<!-- script js for dark/light mode and portfolio selector -->
+	<script src="main.js"></script>
+
 </body>
+
 </html>
